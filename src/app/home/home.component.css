@@ -1,3 +1,108 @@
 .ml-20{
   margin-left: 20px;
 }
+body{
+  overflow-x: hidden !important;
+}
+h1{
+  font-size: 2.5em;
+  font-weight:300;
+  color: #025AA5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+h3{
+  color: #025AA5;
+  font-size: 1.7rem;
+  font-weight:100;
+}
+h2{
+  font-size: 1.3em;
+  font-weight:100;
+}
+p{
+  font-size: 1em;
+}
+
+@media (max-width: 767px) {
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    body {
+        margin: 0;
+    }
+}
+
+a.page-scroll{
+  color: #025AA5;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f5b835;
+    opacity: .75;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.timeline-circle{
+  height:60px; width:60px; border-radius:50%; background-color: #f5b835; text-align:center; padding-top: 6%;
+  background: -webkit-radial-gradient( #F8DA6E,#f5b835); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient( #F8DA6E,#f5b835); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#F8DA6E, #f5b835); /* For Firefox 3.6 to 15 */
+  background: radial-gradient( #F8DA6E,#f5b835); /* Standard syntax (must be last) */
+}
+.timeline-bar{
+  height:120px; width:20px; background-color: #F8DA6E; border-radius: 5%; text-align: center;
+}
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+.row.justify-content-md-center card{
+  margin:auto;
+}
+a.card-link{
+  color: gray;
+  font-weight: bold;
+}
+.card_image{
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+}
+a.carousel-control-prev{
+  display: none;
+}

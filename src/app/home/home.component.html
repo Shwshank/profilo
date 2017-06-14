@@ -1,25 +1,482 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse  bg-primary ">
+<nav class="navbar navbar-toggleable-md navbar-inverse navbar-fixed-top fixed-top "
+  style="background-color:#F8DA6E ;
+    background: -webkit-linear-gradient(left,#F8DA6E,  #f5b835); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #F8DA6E, #f5b835); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #F8DA6E, #f5b835); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,#F8DA6E , #f5b835); /* Standard syntax (must be last) */">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand ml-20" routerLink="">Navbar</a>
+  <a class="navbar-brand ml-20" href="#section1" style="color: red">Greetings!</a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item ">
-        <a class="nav-link" routerLink="/page1">Page 1 <span class="sr-only">(current)</span></a>
+        <a class="page-scroll " href="#section2">Recent Projects<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" routerLink="/page2">Page 2 <span class="sr-only">(current)</span></a>
+        <a class="page-scroll" href="#section3">Expertise<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" routerLink="/page3">Page 3 <span class="sr-only">(current)</span></a>
+        <a class="page-scroll" href="#section4">New tool<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="page-scroll" href="#section5">Timeline<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="page-scroll" href="#section6">Say Hi, I'll be glad<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
 </nav>
-<router-outlet></router-outlet>
 
-<footer>
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top" style="z-index:101 !important; ">
+  <i class="fa fa-arrow-up" style="color:#025AA5" aria-hidden="true"></i>
+</a>
+<!-- [@flyInOut]='state' -->
+<div id="section1" class="jumbotron jumbotron-fluid"  style="background-color:#F8DA6E; padding-bottom:1rem">
+  <div class="container text-center">
+    <h1  data-aos="zoom-in" data-aos-duration="900" class="display-3"><b>Hi there, </b></h1>
+      <div class="row  justify-content-md-center">
+        <div class="col-md-11">
+          <p data-aos="zoom-in" data-aos-duration="2700" style="padding-top:0; font-size:1.1em ">
+            My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+            It has been more than 1 year since I decided switch my profile from Salesforce Admin to explore javascript & guesss what, I am loving this profile.
+            I've designed this website because I thought pdf resumes are kind of boring. Here I'll list all of my updated skills time to time.
+            Well yes!  I am <span style="color: red"> looking for a job </span> offer from a company with whome I could sharpen my skills, serving with dedication.
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
 
-</footer>
+<h1 style="padding-top:50px" class="text-center" id="section2" style="padding-top:0px;">Some of the recent projects I've worked on</h1>
+<div class="container">
+  <div class="row justify-content-md-center">
+      <div class="col-md-5 col-sm-11">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000000" style=" max-height:650px; min-height: 650px;">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="card text-center" align="center" style="margin:auto" >
+                <img src="./assets/images/old/school1.png" height="300px"  class="img-fluid" style="margin:auto">
+                <div class="card-block text-center">
+                  <h3 ><b>Arbor Preparatory High School</b></h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Description : </span> News posting portal </p></li>
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Responsiblity : </span> Application API </p></li>
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Tech. Specs : </span> nodejs, MongoDB </p></li>
+                  </ul>
+                  <div class="card-block">
+
+                    <a  data-slide="next" href="#carouselExampleControls" class="btn btn-primary">More Info <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" >
+              <div class="card text-center" align="center" style=" margin:auto"  >
+                <div class="card-block">
+                  <p>
+                    My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+                    My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+                  </p>
+                  <a  data-slide="prev" href="#carouselExampleControls" class="btn btn-primary">More Info <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-5 col-sm-11">
+        <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" data-interval="100000000" style=" max-height:650px; min-height: 650px;">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="card text-center" align="center" style="margin:auto" >
+                <img src="./assets/images/old/school1.png" height="300px"  class="img-fluid" style="margin:auto">
+                <div class="card-block text-center">
+                  <h3 ><b>Arbor Preparatory High School</b></h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Description : </span> News posting portal </p></li>
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Responsiblity : </span> Application API </p></li>
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Tech. Specs : </span> nodejs, MongoDB </p></li>
+                  </ul>
+                  <div class="card-block">
+
+                    <a  data-slide="next" href="#carouselExampleControls1" class="btn btn-primary">More Info <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-center" align="center" style="margin:auto" >
+                <div class="card-block">
+                  <p>
+                    My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+                    My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+                  </p>
+                  <a  data-slide="prev" href="#carouselExampleControls1" class="btn btn-primary">More Info <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-5 col-sm-11">
+        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="100000000" style=" max-height:650px; min-height: 650px;">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="card text-center" align="center" style="margin:auto" >
+                <img src="./assets/images/old/school1.png" height="300px"  class="img-fluid" style="margin:auto">
+                <div class="card-block text-center">
+                  <h3 ><b>Arbor Preparatory High School</b></h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Description : </span> News posting portal </p></li>
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Responsiblity : </span> Application API </p></li>
+                    <li class="list-group-item"> <p style="margin:auto;"> <span style="color: #025AA5;"> Tech. Specs : </span> nodejs, MongoDB </p></li>
+                  </ul>
+                  <div class="card-block">
+
+                    <a  data-slide="next" href="#carouselExampleControls2" class="btn btn-primary">More Info <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card text-center" align="center" style="margin:auto" >
+                <div class="card-block">
+                  <p>
+                    My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+                    My name is Shashank & I am a full stack Javascript developer. I love to code Javascript with the latest frameworks.
+                  </p>
+                  <a  data-slide="prev" href="#carouselExampleControls2" class="btn btn-primary">More Info <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+      </div>
+
+
+  </div>
+</div>
+
+
+<h1 style="padding-top:50px" class="text-center" id="section3">Expect Minions, I play with</h1>
+<div class="card" style="border:0">
+  <div class="container">
+    <div class="row justify-content-md-center" >
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/monogodb.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://www.mongodb.com/" target="_blank"  class="card-link " >MongoDB</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/express.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://expressjs.com/" target="_blank"  class="card-link">Express JS</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/angular.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://angular.io/" target="_blank"  class="card-link">Angular</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/nodejs.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://nodejs.org/" target="_blank"  class="card-link">nodejs</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/cordova.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://cordova.apache.org/" target="_blank"  class="card-link">Cordova</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/ionic.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://ionicframework.com/" target="_blank"  class="card-link">Ionic</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/sass.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="http://sass-lang.com/" target="_blank"  class="card-link">Sass</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/robomongo.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://robomongo.org/" target="_blank"  class="card-link">Robomongo</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/angury.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://augury.angular.io/" target="_blank"  class="card-link">Augury</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/passportjs.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="http://passportjs.org/" target="_blank"  class="card-link">PassportJS</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/auth0.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://auth0.com/" target="_blank"  class="card-link">Auth0</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/pwa-lighthouse.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank"  class="card-link">LightHouse</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/onesignal.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://onesignal.com/" target="_blank"  class="card-link">OneSignal</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/postman.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://www.getpostman.com/" target="_blank"  class="card-link">Postman</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/firebase.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://firebase.google.com/" target="_blank"  class="card-link">Firebase</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/heroku.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://www.heroku.com/" target="_blank"  class="card-link">Heroku</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 10rem; padding-top:15px"  data-aos="zoom-in" >
+        <img style="" class="card-img-top" height="150rem" src="./assets/images/tools/atom.png" alt="Card image cap" style="">
+        <div class="card-block text-center">
+          <a href="https://atom.io/" target="_blank"  class="card-link">Atom</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<h1 style="padding-top:50px" class="text-center" id="section4">What's new that I am playing with</h1>
+<div class="card" style="border:0" >
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-6">
+
+          <img src="./assets/images/old/pwa.png" class="img-fluid"  alt="">
+
+      </div>
+      <div class="col-md-6">
+        <p>Native app store apps do things like send push notifications, work offline, look and feel like an app (as Apple and Google have imagined them), load on the homescreen, and so on and so forth. Mobile Web Apps accessed in a mobile browser, by comparison, historically haven’t done those things. Progressive Web Apps fix that with new Web APIs, new design concepts, and new buzzwords.</p>
+        <p>Progressive Web Apps bring features we expect from native apps to the mobile browser experience in a way that uses standards-based technologies and run in a secure container accessible to anyone on the web.</p>
+        <p>On the whole, Progressive Web Apps describe a collection of technologies, design concepts, and Web APIs that work in tandem to provide an app-like experience on the mobile web. Let’s walk through some of the core tenets of Progressive Web Apps.</p>
+        <button id="pwa" class="btn btn-primary" onclick="window.open('https://developers.google.com/web/progressive-web-apps/')"> Know more from google </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 style="padding-top:50px" class="text-center" id="section5">Timeline</h1>
+<div class="container">
+
+  <div class="row  justify-content-md-center">
+    <div class="col-4  text-right" data-aos="zoom-in-down"  align="center" >
+      <h3><i class="fa fa-university" aria-hidden="true"></i> <b>B.Tech</b></h3>
+    </div>
+    <div class="col-4"align="center">
+      <div class="timeline-circle"  >
+        <h2><b>2014</b></h2>
+      </div>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-5"></div>
+    <div class="col-2 " align="center">
+      <div class="timeline-bar" ></div>
+    </div>
+    <div class="col-5">
+      <h3 data-aos="zoom-in-down" ><i class="fa fa-laptop" aria-hidden="true"></i><b>Web developer</b></h3>
+    </div>
+  </div>
+
+  <div class="row  justify-content-md-center">
+    <div class="col-4  text-right" data-aos="zoom-in-down"  align="center">
+      <img src="./assets/images/tools/hcl.png" alt="">
+    </div>
+    <div class="col-4"align="center">
+      <div class="timeline-circle">
+        <h2><b>2015</b></h2>
+      </div>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-5"></div>
+    <div class="col-2 " align="center">
+      <div class="timeline-bar" ></div>
+    </div>
+    <div class="col-5">
+      <div data-aos="zoom-in-down" >
+        <img src="./assets/images/tools/hcl.png" alt=""> <h3 style="color: light-blue"><b>Pearson</b></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="row  justify-content-md-center">
+    <div class="col-4  text-right" data-aos="zoom-in-down"  align="center">
+      <img src="./assets/images/tools/hcl.png" alt=""> <h3 style="color: light-blue"><b>salesforce</b></h3>
+    </div>
+    <div class="col-4"align="center">
+      <div class="timeline-circle">
+        <h2><b>2016</b></h2>
+      </div>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-5"></div>
+    <div class="col-2 " align="center">
+      <div class="timeline-bar" ></div>
+    </div>
+    <div class="col-5">
+      <h3 data-aos="zoom-in-down" ><i class="fa fa-fire" aria-hidden="true"></i><b> Full Stack JS Dev.</b></h3>
+    </div>
+  </div>
+
+  <div class="row  justify-content-md-center">
+    <div class="col-4  text-right" data-aos="zoom-in-down"  align="center">
+      <h3><i class="fa fa-check" aria-hidden="true"></i><b> Completed projects</b></h3>
+    </div>
+    <div class="col-4"align="center">
+      <div class="timeline-circle">
+        <h2><b>2017</b></h2>
+      </div>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-5"></div>
+    <div class="col-2 " align="center">
+      <div class="timeline-bar" ></div>
+    </div>
+    <div class="col-5">
+      <h3 data-aos="zoom-in-down" ><i class="fa fa-bolt" aria-hidden="true"></i><b> Even More Projects</b></h3>
+    </div>
+  </div>
+
+  <div class="row  justify-content-md-center">
+    <div class="col-4  text-right" data-aos="zoom-in-down"  align="center">
+      <p> </p>
+    </div>
+    <div class="col-4"align="center">
+      <div class="timeline-circle">
+        <h2><b>June</b></h2> <br><br>
+
+      </div>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+  <div align="center" >
+     <h3><b>That's it! All abtout me</b> </h3>
+     <p style='margin-bottom: 7rem'>
+      After graduation I've worked as a webdeveloper at  somewhere. 2015 I joined HCL as technical consultant for HCL's inhouse project.
+      By the end of 2015 I was assigned on new project of Pearson Vue. I was responsible for close co-ordination between the technical consultant officers and the Salesforce CRM developers.
+      By the starting of 2016 I cleared Salesforce CRM administrator certification and moved to Salesforce project. Mid of 2016, Salesforce got ramped down from HCL.
+      I resigned on November and started working as fullstack Javascript developer.
+     </p>
+   </div>
+</div>
+
+
+<div class="jumbotron jumbotron-fluid" style=" margin-bottom:0;
+  background-color:#F8DA6E ;
+  background: -webkit-linear-gradient(left,#F8DA6E,  #f5b835); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #F8DA6E, #f5b835); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #F8DA6E, #f5b835); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,#F8DA6E , #f5b835); /* Standard syntax (must be last) */"
+  id="section6">
+  <div class="container text-center">
+    <h1 style="padding-bottom: .3rem" data-aos="zoom-in" data-aos-duration="1000" style=""> <b> Thanks for your time! </b></h1>
+    <p style="font-size: 1.1em" >You can join me in running, coding or playing somewhere in east of Delhi. <br>
+       Ring me at +91 8447997069 or drop me a message with contact info.</p>
+
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+      <div class="form-group">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-3 col-sm-4">
+              <input type="text" class="form-control" id="name" name="name" ngModel placeholder="Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="Message" name="message" ngModel placeholder="Message with contact info."  required>
+            </div>
+            <div class="col-md-1">
+              <button type="submit" class="btn btn-primary" [disabled]="!f.valid">{{form_submit}} <i class='fa fa-paper-plane-o' aria-hidden='true'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+<div style="width:100%; background-color:#3e3e3e; color: white; height:10px;  "></div>
+<div style="width:100%; background-color:#3e3e3e; color: white; height:50px;  ">
+  <p class="text-center" style=" margin-bottom:0;">
+    I've coded this Angular template with <span style="color: red"><i class="fa fa-heart" aria-hidden="true"></i></span> Feel free to use it, fork me at Github.
+  </p>
+</div>
