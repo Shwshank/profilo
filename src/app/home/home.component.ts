@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  trigger,  state,  style,  animate,  transition, keyframes} from '@angular/animations';
 
+import { ProjectService } from '../provider/project-service';
+import { Message } from '../provider/message-modal';
 
 @Component({
   selector: 'app-home',
@@ -30,18 +32,51 @@ export class HomeComponent implements OnInit {
   form_submit : string = "Send";
   form_name : string;
   form_message : string;
+  cachedData : string = "negative";
+  message : Message;
+
   @ViewChild('f') form_contact: NgForm;
 
-  constructor() { }
+  constructor(private ProjectService: ProjectService) {
+    this.cacheService();
+  }
+
 
   ngOnInit() {
   }
 
+  cacheService(){
+     this.cachedData = localStorage.getItem("cachedkey");
+     if(this.cachedData == null)
+     {
+       //console.log("cached data status negative");
+       localStorage.setItem("cachedkey","positive+");
+       //console.log("cache saved");
+
+     }
+     if(this.cachedData == "positive+")
+     {
+       //console.log("cached data status "+this.cachedData);
+       this.ProjectService.cacheStatus(this.cachedData);
+     }
+
+     localStorage.setItem("cachedkey","positive+");
+     //console.log("cache saved");
+
+  }
+
   onSubmit(){
+    this.form_submit = 'Just a moment....';
     this.form_name = this.form_contact.value.name;
     this.form_message = this.form_contact.value.message;
-    console.log(this.form_name+ ' , ' +this.form_message );
+    //console.log(this.form_name+ ' , ' +this.form_message );
+    
+    this.message = new Message(this.form_name,this.form_message, new Date().toString());
+
+    this.ProjectService.setMessage(this.message).subscribe();
+
     this.form_contact.reset();
+
     if(this.form_submit == "Thank you!"){
       this.form_submit = "Got the messaging again!";
     }

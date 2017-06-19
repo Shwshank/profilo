@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './home/page-not-found/page-not-found.comp
 import { AppRoutingModule } from './router-module';
 import { ProjectPageComponent } from './home/project-page/project-page.component';
 import { ProjectDetailsComponent } from './home/project-details/project-details.component';
+import { ProjectService } from './provider/project-service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ProjectDetailsComponent } from './home/project-details/project-details.
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
